@@ -8,6 +8,7 @@ use regex::Regex;
 static REGEX_EXPRESSION: &str = "((?:\\(\\?i\\))?\\^[ -~]{3,})(?:\0|<|\\\\s\\*)|\0(/[-\\w/\\.\\s]{3,})\0|\0\0\0([A-Z_]{2,})\0\0\0|(cff9)|(a238)";
 
 #[derive(Debug)]
+#[allow(dead_code)]
 struct Match<'a> {
 	expr: &'a str,
 	is_needed: bool
